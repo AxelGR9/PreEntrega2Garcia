@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ced8e0;
+    text-align: left;
+    padding: 1rem; 
+}
+
+header nav {
+    display: flex;
+    justify-content:space-between; 
+    flex-direction: row;
+    align-items: center; 
+}
+
+header nav li {
+    list-style-type: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: black;
+}
+
+
+header nav a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+
+header nav img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.welcome{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-text{
+    color: whitesmoke;
+}
+
+.form{
+    margin-top: 2rem;
+}
+
+.promos{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.collection img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.collection img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.HomeData{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px; 
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HomeData > div {
+        margin-bottom: 1rem; /* Agrega espacio entre las categorías de juegos */
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .welcome {
+        padding: 0 10px; /* Agrega un poco de espacio a los lados del párrafo */
+    }
+
+    .our{
+        display: block;
+        margin: 0 auto; 
+        max-width: 100%;
+        height: auto; 
+        width: 80%; 
+        margin-top: 1rem;
+    }
+
+    .promos{
+        font-size: 20px;
+    }
+
+    .promos li{
+        margin-bottom: 1rem;
+    }
+
+}
