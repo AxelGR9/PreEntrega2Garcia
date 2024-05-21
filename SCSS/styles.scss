@@ -1,0 +1,230 @@
+//Variables Globales
+$primary-color: #333;
+$secondary-color: #fff;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/*Barra de navegación*/
+header {
+    background-color: #ced8e0;
+    text-align: left;
+    padding: 1rem; 
+}
+
+main{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#description{
+    padding-bottom: 15px;
+}
+
+#optionsToFind{
+    padding-bottom: 10px;
+}
+
+// Estilos para la animación del título
+.animated-title {
+    font-size: 3em;
+    color: black;
+    display: inline-block;
+
+    span {
+        display: inline-block;
+        animation: move 2s infinite;
+    }
+
+    // Aplicar un retraso diferente para cada letra
+    span:nth-child(1) { animation-delay: 0s; }
+    span:nth-child(2) { animation-delay: 0.1s; }
+    span:nth-child(3) { animation-delay: 0.2s; }
+    span:nth-child(4) { animation-delay: 0.3s; }
+    span:nth-child(5) { animation-delay: 0.4s; }
+    span:nth-child(6) { animation-delay: 0.5s; }
+    span:nth-child(7) { animation-delay: 0.6s; }
+    span:nth-child(8) { animation-delay: 0.7s; }
+}
+
+@keyframes move {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+//Estilo del tamaño de la letra
+.welcome{
+    font-size: 1.2rem;    
+}
+
+//Estilos del Footer
+.footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 12px 0;
+
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex-basis: 30%;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+
+    .footer-heading {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        font-weight: bolder;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        padding-bottom: -15px;
+        border-top: 1px solid $secondary-color;
+        padding-top: 15px;
+        text-align: center;
+    }
+}
+
+//Espaciado del formulario de Contacto
+.form{
+    margin-top: 2rem;
+}
+
+//Estilos de las imagenes de Tienda 
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+
+    img {
+        width: 100%;
+        
+        aspect-ratio: 1/1;
+        margin-bottom: 1rem;
+    }
+}
+
+//Estilos de la pantalla de inicio en la sección de categorias
+.HomeData {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .card {
+            border: 1 solid #CED8E0;
+            border-radius: 5px;
+            border-radius: 5px;
+            padding: 18px;
+            text-align: justify;
+            background-color: aliceblue;
+        
+            &:hover{
+                transform: scale(1.1); 
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                transition: transform 1.2s; 
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Espacio del titulo de Promociones
+.promo-title{
+    margin-top: 1rem;
+}
+
+//Estilos del Iframe de Nosotros
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top:1rem;
+
+    iframe {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px; 
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HomeData > div {
+        margin-bottom: 1rem; 
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .welcome {
+        padding: 0 10px; 
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

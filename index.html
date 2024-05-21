@@ -10,55 +10,128 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./img/logo.jpg" alt="Logo" width="10%">
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./pages/nosotros.html">¿Quienes somos?</a>
-            </li>
-            <li>
-                <a href="./pages/tienda.html">Tienda de Juegos</a>
-            </li>
-            <li>
-                <a href="./pages/promociones.html">Promociones</a>
-            </li>
-            <li>
-                <a href="./pages/contacto.html">Contacto</a>
-            </li> 
+        <nav class="navbar navbar-expand-lg bs-tertiary-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/logo.jpg" alt="Logo GameStore" width="150" height="150" class="d-inline-block align-text-top">
+                </a>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fw-bold" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fw-bold" href="./pages/nosotros.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fw-bold" href="./pages/tienda.html">Tienda de Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fw-bold" href="./pages/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fw-bold" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>VideoGame Store</h1>
-        <p class="welcome">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque aperiam illum alias, ratione harum facere. Ab sunt deserunt nemo veritatis vitae laudantium assumenda quo, tenetur expedita voluptate totam obcaecati?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos minus perferendis aspernatur unde amet ducimus, accusamus est quod laboriosam omnis nemo enim dolorum consectetur nisi? Voluptatibus obcaecati assumenda sapiente nihil?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas amet maxime modi facere, expedita consequuntur quae eligendi. Ipsa similique aperiam optio beatae sunt aliquam exercitationem eaque officiis voluptatibus fugit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis numquam, veritatis exercitationem eaque unde delectus doloribus quo molestiae dolorem veniam nobis fugit quibusdam quod inventore consectetur asperiores eos molestias iure.
-        </p>
+        <h1 class="animated-title">
+            <span>G</span><span>a</span><span>m</span><span>e</span>
+            <span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>
+        </h1>
+        <div class="welcome">
+            
+            <div id="description">    
+            En GameZone, nos dedicamos a ofrecerte la mejor experiencia en entretenimiento digital. Ya seas un gamer veterano o         un novato que está empezando a descubrir el emocionante mundo de los videojuegos, tenemos algo especial para ti.
+            </div>
+
+            <div id="optionsToFind">
+                <h2>¿Qué puedes encontrar en GameStore?</h2>
+
+                <ul>
+                    <li>
+                        Amplia Selección de Juegos: Desde los últimos lanzamientos hasta los clásicos que definieron generaciones. Disponemos de juegos para todas las consolas, incluyendo PlayStation, Xbox, Nintendo, y PC.
+                    </li>
+
+                    <li>
+                        Consolas y Accesorios: Encuentra la consola de tus sueños y todos los accesorios que necesitas para mejorar tu experiencia de juego, desde controles hasta audífonos de alta gama.
+
+                    </li>
+
+                    <li>
+                        Merchandising Exclusivo: Para los verdaderos fans, tenemos una variedad de productos oficiales como camisetas, figuras de acción, posters y mucho más.
+                    </li>
+
+                    <li>
+                        Torneos y Eventos: Únete a nuestra comunidad participando en torneos locales, noches de juego y eventos especiales donde puedes conocer a otros gamers y competir por increíbles premios.
+                    </li>
+                    
+                    <li>
+                        Asesoramiento Personalizado: Nuestro equipo de expertos está aquí para ayudarte. Ya sea que necesites recomendaciones sobre qué juego elegir o asistencia técnica, estamos a tu disposición.
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                En GameZone, creemos que los videojuegos son más que un pasatiempo, son una forma de vida. Nuestra misión es brindarte un espacio donde puedas explorar, divertirte y conectarte con otros jugadores que comparten tu pasión. ¡Ven a visitarnos y descubre por qué somos la tienda favorita de los gamers!
+            </div>
+            
+            
+        </div>
     </main>
 
     <section class="HomeData">
         <h2>Categorias de Juegos</h2>
         
+        <div class="cards-container">
+            <div class="card">
+                <h3><em>Consolas de Videojuegos</em></h3>
+                <p>Sumérgete en el emocionante mundo de los videojuegos con nuestras consolas de última generación. Desde la icónica PlayStation hasta la versátil Nintendo Switch, cada consola ofrece una experiencia única y emocionante para jugadores de todas las edades.</p>
+            </div>
+    
+            <div class="card">
+                <h3><em>Maquinas de Juegos</em></h3>
+                <p>Revive la nostalgia y la emoción de los juegos clásicos con nuestras maquinitas de videojuegos. Estas pequeñas pero poderosas máquinas ofrecen una experiencia de juego única, llevándote de vuelta a la era dorada de los arcade y los juegos retro.</p>
+            </div>
+    
+            <div class="card">
+                <h3><em>Juegos de Realidad Virtual</em></h3>
+                <p>Explora un mundo completamente nuevo de entretenimiento con nuestros juegos de realidad virtual. Con tecnología de vanguardia y experiencias inmersivas, los juegos de realidad virtual te transportan a mundos fantásticos donde la acción cobra vida y la aventura te espera en cada esquina.</p>
+            </div>
+        </div>
         
-        <div>
-            <h3><em>Consolas de Videojuegos</em></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam in praesentium pariatur molestiae doloribus rerum sunt omnis, aut inventore ullam eaque ex officia itaque necessitatibus dolorum! At, nulla ullam.lorem</p>
-        </div>
-
-        <div>
-            <h3><em>Maquinas de Juegos</em></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam in praesentium pariatur molestiae doloribus rerum sunt omnis, aut inventore ullam eaque ex officia itaque necessitatibus dolorum! At, nulla ullam.lorem</p>
-        </div>
-
-        <div>
-            <h3><em>Juegos de Realidad Virtual</em></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam in praesentium pariatur molestiae doloribus rerum sunt omnis, aut inventore ullam eaque ex officia itaque necessitatibus dolorum! At, nulla ullam.lorem</p>
-        </div>
     </section>
 
-    <footer>
-        <h3 class="footer-text">Todos los derechos reservados</h3>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-heading">Sobre Nosotros</h3>
+                <p>Somos una tienda dedicada a ofrecerte los mejores juegos y productos relacionados con el mundo del gaming.</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Contacto</h3>
+                <p>Email: info@gamestore.com</p>
+                <p>Teléfono: +52 8116975244</p>
+                <p>Dirección: Calle Rio Orinoco, Monterrey</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© 2024 GameStore - Todos los derechos reservados</p>
+        </div>
     </footer>
+
 </body>
 </html>
